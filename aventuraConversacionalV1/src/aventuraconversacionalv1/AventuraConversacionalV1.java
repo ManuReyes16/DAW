@@ -22,15 +22,64 @@ public class AventuraConversacionalV1 {
         Scanner sc = new Scanner (System.in);
         
        
-        String , izqda;
         
-                                
-        System.out.println("Elige un camino");
-        String cam1 = sc.nextLine();
+        boolean salir = true;
+        int opcion = 4;
+        int resultado = 0;
+                
+        String panelOpciones = "elige un camino: 1. izquierda, 2. derecha, 3. recto, 4. volver a pensar, 5. salir del juego";
         
-       switch (decha){
-           case 1: System.out.println("");
-       }
+              System.out.println(panelOpciones);                  
+        
+        
+            switch (opcion){
+                
+                case 1:
+                    System.out.println("girar a la izquierda");
+                    System.out.println(panelOpciones);
+                    opcion = sc.nextInt();
+                    break;
+                    
+                case 2:
+                    System.out.println("girar a la derecha");
+                    System.out.println(panelOpciones);
+                    opcion = sc.nextInt();
+                    break;
+                    
+                case 3: {
+                    System.out.println("seguir recto");
+                    System.out.println(panelOpciones);
+                    opcion = sc.nextInt();
+                    
+                    
+                    break;    
+                }
+                    
+                case 4:
+                    System.out.println("veamos a donde voy...");
+                    
+                    opcion = sc.nextInt();
+                    break;    
+                
+                case 5:
+                    System.out.println("hasta pronto");
+                    salir = false;
+                    break;
+                    
+                default:
+                    System.out.println("esa opcion no es válida");
+                  
+                    
+                    
+            
+            }        
+                                                            
+                                                          
+            
+                                                            
+                                                           
+      
+       
                
         
         
